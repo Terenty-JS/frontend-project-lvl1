@@ -1,3 +1,11 @@
 #!/usr/bin/env node
 
-console.log('Welcome to the Brain Games!')
+import firstQuestion from '../src/cli.js';
+
+const nameStart = () => {
+console.log('Welcome to the Brain Games!');
+const yourName = firstQuestion();
+return yourName;
+}
+
+export default nameStart;
