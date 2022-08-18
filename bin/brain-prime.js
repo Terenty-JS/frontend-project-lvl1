@@ -1,4 +1,4 @@
-import { getRandomInt, getAnswer, lastResult } from '../../src/index.js';
+import { getRandomInt, getAnswer, lastResult } from '../src/index.js';
 
 const exersice = (n) => {
   if (n < 2) return 'no';

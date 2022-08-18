@@ -1,4 +1,4 @@
-import { getRandomInt, getAnswer, lastResult } from '../../src/index.js';
+import { getRandomInt, getAnswer, lastResult } from '../src/index.js';
 
 const proverka = (num) => {
   if (num % 2 === 0) return 'yes';

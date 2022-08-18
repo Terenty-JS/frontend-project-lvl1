@@ -1,4 +1,4 @@
-import { getRandomInt, getAnswer, lastResult } from '../../src/index.js';
+import { getRandomInt, getAnswer, lastResult } from '../src/index.js';
 
 const right = (first, second) => {
   if (first >= second) {
