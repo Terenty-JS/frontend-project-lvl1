@@ -1,12 +1,7 @@
 import readlineSync from 'readline-sync';
+import { firstQuestion } from './cli.js';
 
 const getAnswer = (ques) => readlineSync.question(ques);
-
-const firstQuestion = () => {
-  const name = getAnswer('May I have your name? ');
-  console.log(`Hello, ${name}!`);
-  return name;
-};
 
 const nameStart = () => {
   console.log('Welcome to the Brain Games!');
