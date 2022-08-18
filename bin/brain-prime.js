@@ -18,13 +18,12 @@ const exersice = (n) => {
 
 const result = () => {
   const ques = getRandomInt(100);
-  const rightAnswer = exersice(ques);
   console.log(`Question: ${ques}`);
   const answer = getAnswer('Your answer: ');
   if (rightAnswer === answer) {
     return true;
   }
-  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'`);
+  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${exersice(ques)}'`);
 };
 
 lastResult('Answer "yes" if given number is prime. Otherwise answer "no".', result);

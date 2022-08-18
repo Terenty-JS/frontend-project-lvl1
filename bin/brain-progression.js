@@ -37,13 +37,12 @@ const right = (item) => {
 
 const result = () => {
   const exercise = exersice();
-  const rightAnswer = right(exercise);
-  console.log(`Question: ${exercise}`);
+  console.log(`Question: ${exercise.join(' ')}`);
   const answer = getAnswer('Your answer: ');
-  if (rightAnswer == answer) {
+  if (right(exercise) == answer) {
     return true;
   }
-  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'`);
+  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${right(exercise)}'`);
 };
 
 lastResult('What number is missing in the progression?', result);
