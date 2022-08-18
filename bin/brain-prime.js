@@ -20,7 +20,7 @@ const result = () => {
   const ques = getRandomInt(100);
   console.log(`Question: ${ques}`);
   const answer = getAnswer('Your answer: ');
-  if (rightAnswer === answer) {
+  if (exersice(ques) === answer) {
     return true;
   }
   console.log(`'${answer}' is wrong answer ;(. Correct answer was '${exersice(ques)}'`);
