@@ -39,10 +39,10 @@ const result = () => {
   const exercise = exersice();
   console.log(`Question: ${exercise.join(' ')}`);
   const answer = getAnswer('Your answer: ');
-  if (right(exercise) == answer) {
-    return true;
+  if (String(right(exercise)) === String(answer)) {
+    return 1;
   }
-  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${right(exercise)}'`);
+  return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${right(exercise)}'`);
 };
 
 lastResult('What number is missing in the progression?', result);

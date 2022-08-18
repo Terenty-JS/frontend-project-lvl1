@@ -4,7 +4,7 @@ import { getRandomInt, getAnswer, lastResult } from '../src/index.js';
 
 const exersice = (n) => {
   if (n < 2) return 'no';
-  else if (n === 2) return 'yes';
+  if (n === 2) return 'yes';
   let i = 2;
   const limit = Math.sqrt(n);
   while (i <= limit) {
@@ -23,7 +23,7 @@ const result = () => {
   if (exersice(ques) === answer) {
     return true;
   }
-  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${exersice(ques)}'`);
+  return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${exersice(ques)}'`);
 };
 
 lastResult('Answer "yes" if given number is prime. Otherwise answer "no".', result);

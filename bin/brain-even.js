@@ -4,7 +4,7 @@ import { getRandomInt, getAnswer, lastResult } from '../src/index.js';
 
 const proverka = (num) => {
   if (num % 2 === 0) return 'yes';
-  else return 'no';
+  return 'no';
 };
 
 const result = () => {
@@ -14,7 +14,7 @@ const result = () => {
   if (proverka(ques) === answer) {
     return true;
   }
-  console.log(`'${answer}' is wrong answer ;(. Correct answer was '${proverka(ques)}'`);
+  return console.log(`'${answer}' is wrong answer ;(. Correct answer was '${proverka(ques)}'`);
 };
 
 lastResult('Answer "yes" if the number is even, otherwise answer "no".', result);

@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
-import { nameStart } from './cli.js';
+import nameStart from './cli.js';
 
 const getAnswer = (ques) => readlineSync.question(ques);
 
-const getRandomInt = (max) => Math.floor(Math.random() * max +1 );
+const getRandomInt = (max) => Math.floor(Math.random() * max + 1);
 
 const lastResult = (quesStart, resultCb) => {
   const name = nameStart();
