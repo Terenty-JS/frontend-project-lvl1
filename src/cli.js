@@ -6,4 +6,10 @@ const firstQuestion = () => {
   return name;
 }
 
-export {firstQuestion};
+const nameStart = () => {
+  console.log('Welcome to the Brain Games!');
+  const yourName = firstQuestion();
+  return yourName;
+};
+
+export {nameStart};

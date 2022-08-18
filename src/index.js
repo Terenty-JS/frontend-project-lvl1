@@ -1,12 +1,7 @@
 import readlineSync from 'readline-sync';
-import { firstQuestion } from './cli.js';
+import { nameStart } from './cli.js';
 
 const getAnswer = (ques) => readlineSync.question(ques);
-
-const nameStart = () => {
-  console.log('Welcome to the Brain Games!');
-  return firstQuestion();
-};
 
 const getRandomInt = (max) => Math.floor(Math.random() * max);
 
