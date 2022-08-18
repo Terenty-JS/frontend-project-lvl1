@@ -2,20 +2,18 @@
 
 import { getRandomInt, getAnswer, lastResult } from '../src/index.js';
 
-const exersice = () => {
-  const symbol = ['+', '-', '*'];
-  const rand = Math.floor(Math.random() * symbol.length);
-  return getRandomInt(100) + symbol[rand] + getRandomInt(100);
-};
-
 const result = () => {
-  const exercise = exersice();
-  console.log(`Question: ${exercise}`);
+  const symbol = ['+', '-', '*'];
+  let rand = Math.floor(Math.random() * symbol.length);
+  let first = getRandomInt(100);
+  let second = getRandomInt(100);
+  let znak = symbol[rand]
+  console.log(`Question: ${first + znak + second}`);
   const answer = getAnswer('Your answer: ');
-  if (eval(exercise) == answer) {
+  if (eval(first + znak + second) == answer) {
     return true;
   } else {
-    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${eval(exercise)}'`);
+    console.log(`'${answer}' is wrong answer ;(. Correct answer was '${eval(first + znak + second)}'`);
     return false;
   }
 };
