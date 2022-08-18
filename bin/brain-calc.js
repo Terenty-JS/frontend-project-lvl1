@@ -8,7 +8,7 @@ const result = () => {
   let first = getRandomInt(100);
   let second = getRandomInt(100);
   let znak = symbol[rand]
-  console.log(`Question: ${first + znak + second}`);
+  console.log(`Question: ${first} ${znak} ${second}`);
   const answer = getAnswer('Your answer: ');
   if (eval(first + znak + second) == answer) {
     return true;
