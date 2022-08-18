@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { getRandomInt, getAnswer, lastResult } from '../src/index.js';
 
 const exersice = () => {
